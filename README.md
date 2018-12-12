@@ -23,13 +23,15 @@ In a multi-account configuration where users are configured in one account and r
 2. Create AssumeRole policy to allow the created user to access the remote account role.
 
 
-## Configure boto3
+## Configure boto3/awscli
+
+
+
 
 
 # Usage
 
 ```
-# set boto3 required 
 # Example Crontab setting
 0,30 * * * * /home/user/aws-domain-ip-updater/execute_update_vpn_ip.sh > /home/user/aws-domain-ip-updater/updator.log 2>&1
 ```
