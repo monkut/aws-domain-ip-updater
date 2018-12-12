@@ -12,7 +12,7 @@ Create the user:
 
 ## Single Account
 
-1. Apply '' policy to user
+1. Apply 'AmazonRoute53FullAccess' policy to user
 
 ## Multi-Account 
 
@@ -30,5 +30,6 @@ In a multi-account configuration where users are configured in one account and r
 
 ```
 # set boto3 required 
-export AWS_PROFILE={}
+# Example Crontab setting
+0,30 * * * * /home/user/aws-domain-ip-updater/execute_update_vpn_ip.sh > /home/user/aws-domain-ip-updater/updator.log 2>&1
 ```
